@@ -1,4 +1,4 @@
-#keyboard {
+/* #keyboard {
   display: block;
   border: 2px solid black;
   padding: 5px;
@@ -27,4 +27,49 @@
 
 .active {
   background: orange;
+} */
+
+.main-textaria {
+  /* margin: 0 auto; */
+  position: absolute;
+  top: 130px;
+  /* right: 30px; */
+  left: 100px;
+  width: 300px;
+}
+
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  background: #004134;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  transition: bottom 0.4s;
+  height: 100px;
+}
+
+.keyboard--hidden {
+  bottom: -100%;
+}
+
+.keyboard__keys {
+  text-align: center;
+}
+
+.keyboard__key {
+  height: 45px;
+  width: 6%;
+  max-width: 90px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
